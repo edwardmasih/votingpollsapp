@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="card text-center">
+        <div class="card-body">
+            <h1 class="card-title">Pollster</h1>
+            <p class="card-text">This is the polling app example.</p>
+            <a href="{% url 'polls:index' %}" class="btn btn-primary">View Available Polls</a>
+        </div>
+    </div>
+    <br>
+
+{% endblock %}
+
+<!--
+    <div class="card text-center">
+        <div class="card-body">
+            <h5 class="card-title">Want to add new Question?</h5>
+            <a href="{% url 'pages:add-question' %}" class="btn btn-primary">click here!</a>
+        </div>
+    </div>
+-->

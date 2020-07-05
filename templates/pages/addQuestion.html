@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Register New Question{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h2>Enter New Question.</h2>
+    <form action="{% url 'pages:add-choices' %}" method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <small>date format : YYYYY-MM-DD</small><br><br>
+        <input type="submit" class="btn btn-primary" value="Register">
+    </form>
+{% endblock %}
